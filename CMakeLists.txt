@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.10)
+PROJECT(project1)
+
+SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+SET(CMAKE_CSS_STANDARD 11)
+
+find_package(GDAL REQUIRED)
+INCLUDE_DIRECTORIES(${GDAL_INCLUDE_DIR})
+
+SET(src
+    "main.cpp"
+    )
+
+ADD_EXECUTABLE(project1 ${src})
+TARGET_LINK_LIBRARIES(project1 ${GDAL_LIBRARY})
