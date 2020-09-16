@@ -1,4 +1,4 @@
-for JAX_170_001_RGB_aoi_rec.TIF, 
+1for JAX_170_001_RGB_aoi_rec.TIF, 
 raster size: 2278*2286
 number of bands: 3
 for band 1, the mean and standard deviation are: 116.148 61.2258
