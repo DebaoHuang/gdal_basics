@@ -1,142 +1,142 @@
-for JAX_170_001_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_001_RGB_aoi_rec.TIF, 
 raster size: 2278*2286
 number of bands: 3
 for band 1, the mean and standard deviation are: 116.148 61.2258
 for band 2, the mean and standard deviation are: 115.213 59.6249
 for band 3, the mean and standard deviation are: 116.145 56.8604
-for JAX_170_002_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_002_RGB_aoi_rec.TIF, 
 raster size: 2151*2136
 number of bands: 3
 for band 1, the mean and standard deviation are: 120.648 60.0683
 for band 2, the mean and standard deviation are: 119.909 58.2092
 for band 3, the mean and standard deviation are: 120.359 55.2585
-for JAX_170_003_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_003_RGB_aoi_rec.TIF, 
 raster size: 2209*2346
 number of bands: 3
 for band 1, the mean and standard deviation are: 129.63 64.8915
 for band 2, the mean and standard deviation are: 128.701 63.1409
 for band 3, the mean and standard deviation are: 128.884 60.4749
-for JAX_170_004_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_004_RGB_aoi_rec.TIF, 
 raster size: 2079*2061
 number of bands: 3
 for band 1, the mean and standard deviation are: 127.658 58.2874
 for band 2, the mean and standard deviation are: 127.163 55.9431
 for band 3, the mean and standard deviation are: 134.037 49.086
-for JAX_170_005_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_005_RGB_aoi_rec.TIF, 
 raster size: 2228*2221
 number of bands: 3
 for band 1, the mean and standard deviation are: 130.104 61.1628
 for band 2, the mean and standard deviation are: 130.495 58.3298
 for band 3, the mean and standard deviation are: 135.775 53.8739
-for JAX_170_006_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_006_RGB_aoi_rec.TIF, 
 raster size: 2154*2220
 number of bands: 3
 for band 1, the mean and standard deviation are: 116.871 62.8718
 for band 2, the mean and standard deviation are: 117.122 59.2912
 for band 3, the mean and standard deviation are: 123.448 53.1463
-for JAX_170_007_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_007_RGB_aoi_rec.TIF, 
 raster size: 2111*2150
 number of bands: 3
 for band 1, the mean and standard deviation are: 122.669 61.9924
 for band 2, the mean and standard deviation are: 122.01 58.8681
 for band 3, the mean and standard deviation are: 126.996 52.7265
-for JAX_170_008_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_008_RGB_aoi_rec.TIF, 
 raster size: 2154*2265
 number of bands: 3
 for band 1, the mean and standard deviation are: 122.118 62.5921
 for band 2, the mean and standard deviation are: 121.032 60.4772
 for band 3, the mean and standard deviation are: 123.67 56.1364
-for JAX_170_009_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_009_RGB_aoi_rec.TIF, 
 raster size: 2262*2530
 number of bands: 3
 for band 1, the mean and standard deviation are: 118.007 65.9075
 for band 2, the mean and standard deviation are: 116.802 64.5373
 for band 3, the mean and standard deviation are: 117.727 61.6114
-for JAX_170_010_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_010_RGB_aoi_rec.TIF, 
 raster size: 2441*3018
 number of bands: 3
 for band 1, the mean and standard deviation are: 110.15 68.9154
 for band 2, the mean and standard deviation are: 109.132 67.6271
 for band 3, the mean and standard deviation are: 110.469 64.7753
-for JAX_170_011_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_011_RGB_aoi_rec.TIF, 
 raster size: 2057*2070
 number of bands: 3
 for band 1, the mean and standard deviation are: 124.353 60.2122
 for band 2, the mean and standard deviation are: 123.89 57.6218
 for band 3, the mean and standard deviation are: 130.748 50.8074
-for JAX_170_012_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_012_RGB_aoi_rec.TIF, 
 raster size: 2139*2238
 number of bands: 3
 for band 1, the mean and standard deviation are: 122.482 58.1133
 for band 2, the mean and standard deviation are: 120.864 56.2485
 for band 3, the mean and standard deviation are: 124.28 50.7623
-for JAX_170_013_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_013_RGB_aoi_rec.TIF, 
 raster size: 2165*2308
 number of bands: 3
 for band 1, the mean and standard deviation are: 146.117 50.8425
 for band 2, the mean and standard deviation are: 144.886 48.3844
 for band 3, the mean and standard deviation are: 145.23 46.4046
-for JAX_170_014_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_014_RGB_aoi_rec.TIF, 
 raster size: 2385*2242
 number of bands: 3
 for band 1, the mean and standard deviation are: 137.625 52.4324
 for band 2, the mean and standard deviation are: 130.614 51.9893
 for band 3, the mean and standard deviation are: 130.661 50.1248
-for JAX_170_015_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_015_RGB_aoi_rec.TIF, 
 raster size: 2531*2281
 number of bands: 3
 for band 1, the mean and standard deviation are: 135.518 62.8551
 for band 2, the mean and standard deviation are: 135.678 60.0756
 for band 3, the mean and standard deviation are: 135.442 55.8262
-for JAX_170_016_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_016_RGB_aoi_rec.TIF, 
 raster size: 2220*2359
 number of bands: 3
 for band 1, the mean and standard deviation are: 126.032 62.1957
 for band 2, the mean and standard deviation are: 124.915 60.2171
 for band 3, the mean and standard deviation are: 125.397 57.581
-for JAX_170_018_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_018_RGB_aoi_rec.TIF, 
 raster size: 2065*2050
 number of bands: 3
 for band 1, the mean and standard deviation are: 140.677 50.1076
 for band 2, the mean and standard deviation are: 137.32 47.4097
 for band 3, the mean and standard deviation are: 136.839 46.2168
-for JAX_170_019_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_019_RGB_aoi_rec.TIF, 
 raster size: 2132*2129
 number of bands: 3
 for band 1, the mean and standard deviation are: 143.597 55.2208
 for band 2, the mean and standard deviation are: 141.175 52.3759
 for band 3, the mean and standard deviation are: 135.627 53.0603
-for JAX_170_020_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_020_RGB_aoi_rec.TIF, 
 raster size: 2525*2345
 number of bands: 3
 for band 1, the mean and standard deviation are: 131.134 54.2542
 for band 2, the mean and standard deviation are: 127.926 52.3861
 for band 3, the mean and standard deviation are: 127.31 51.256
-for JAX_170_021_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_021_RGB_aoi_rec.TIF, 
 raster size: 2776*2589
 number of bands: 3
 for band 1, the mean and standard deviation are: 122.067 67.6833
 for band 2, the mean and standard deviation are: 123.914 64.999
 for band 3, the mean and standard deviation are: 121.788 63.3747
-for JAX_170_022_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_022_RGB_aoi_rec.TIF, 
 raster size: 2119*2133
 number of bands: 3
 for band 1, the mean and standard deviation are: 125.324 57.6531
 for band 2, the mean and standard deviation are: 123.426 55.77
 for band 3, the mean and standard deviation are: 125.751 51.3471
-for JAX_170_023_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_023_RGB_aoi_rec.TIF, 
 raster size: 2160*2338
 number of bands: 3
 for band 1, the mean and standard deviation are: 129.146 60.9967
 for band 2, the mean and standard deviation are: 128.302 58.4265
 for band 3, the mean and standard deviation are: 127.951 55.576
-for JAX_170_025_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_025_RGB_aoi_rec.TIF, 
 raster size: 2239*2451
 number of bands: 3
 for band 1, the mean and standard deviation are: 120.069 62.2318
 for band 2, the mean and standard deviation are: 116.045 61.8178
 for band 3, the mean and standard deviation are: 118.877 58.1455
-for JAX_170_026_RGB_aoi_rec.TIF, 
+for C:\Users\Debao\Desktop\Color_Balancing\DATA\img_rpc_BA\JAX_170_026_RGB_aoi_rec.TIF, 
 raster size: 2647*2308
 number of bands: 3
 for band 1, the mean and standard deviation are: 129.176 54.5333

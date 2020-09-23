@@ -1,21 +1,20 @@
 #include <iostream>
 #include <fstream>
-#include<io.h>
-#include<gdal_priv.h>
+#include <gdal_priv.h>
+#include <boost/filesystem.hpp>
+//#include <io.h>
+
+#define outputfile "C:/Users/Debao/Desktop/IndividualStudy/Debao/result.txt"
 
 using namespace std;
+using namespace boost::filesystem;
 
-int main()
+/* old approach
+void getfilename(vector<string>& filename, char* addr)
 {
-	ofstream outfile;
-	outfile.open("C:/Users/Debao/Desktop/project1/result.txt");
-	GDALDataset* Img;
-	GDALAllRegister();
-	char* addr = "C://Users//Debao//Desktop//Color_Balancing//DATA//img_rpc_BA//*.tif";
 	long long Handle;
 	struct _finddata_t FileInfo;
 	Handle = _findfirst(addr, &FileInfo);
-	vector <string> filename;
 	if (Handle != -1)
 	{
 		do {
@@ -23,40 +22,77 @@ int main()
 		} while (_findnext(Handle, &FileInfo) == 0);
 	}
 	_findclose(Handle);
+}
+*/
+
+void getfilename(string addr, vector<string>& filename)
+{
+	path input = addr;
+	recursive_directory_iterator it(input);
+	recursive_directory_iterator endit;
+	while (it != endit)
+	{
+		if (it->path().extension() == ".TIF")
+		{
+			string file_name = it->path().string();
+			filename.push_back(file_name);
+		}
+		it++;
+	}
+}
+
+int main(int argc, char* argv[])
+{
+	std::ofstream outfile;
+	outfile.open(outputfile);
+
+	cout << "Start to get filenames of all *.tif files." << endl;
+	vector <string> filename;
+	string root = argv[1];
+	//getfilename(filename, targetfile);
+	getfilename(root, filename);
+	cout << "All filenames of *.tif files' has been collected." << endl;
+
+	cout << "Start to read the *.tif files and get information." << endl;
+	GDALDataset* Img;
+	GDALAllRegister();
 
 	for (int j = 0; j < filename.size(); j++)
 	{
-		string file = filename[j];
-		char tmp[100];
-		strcpy(tmp, "C:/Users/Debao/Desktop/Color_Balancing/DATA/img_rpc_BA/");
-		strcat(tmp, file.c_str());
-		Img = (GDALDataset*)GDALOpen(tmp, GA_ReadOnly);
+		//string file = filename[j];
+		//char tmp[100];
+		//strcpy_s(tmp, argv[1]);
+		//strcat_s(tmp, file.c_str());
+
+		Img = (GDALDataset*)GDALOpen(filename[j].c_str(), GA_ReadOnly);
+
 		int nCols = Img->GetRasterXSize();
 		int nRows = Img->GetRasterYSize();
 		int nBands = Img->GetRasterCount();
-		cout << "for " << file << ", " << endl;
-		outfile << "for " << file << ", " << endl;
-		cout << "raster size: ";
+
+		outfile << "for " << filename[j] << ", " << endl;
 		outfile << "raster size: ";
-		cout << nCols << '*' << nRows << endl;
 		outfile << nCols << '*' << nRows << endl;
-		cout << "number of bands: ";
 		outfile << "number of bands: ";
-		cout << nBands << endl;
 		outfile << nBands << endl;
+
 		int bApproxOK = false;
 		int bForce = true;
 		double pdfMin, pdfMax, pdfMean, pdfStdDev;
+
 		for (int i = 1; i <= nBands; i++)
 		{
 			GDALRasterBand* pBand = Img->GetRasterBand(i);
 			pBand->GetStatistics(bApproxOK, bForce, &pdfMin, &pdfMax, &pdfMean, &pdfStdDev);
-			cout << "for band " << i << ", the mean and standard deviation are: ";
 			outfile << "for band " << i << ", the mean and standard deviation are: ";
-			cout << pdfMean << ' ' << pdfStdDev << endl;
 			outfile << pdfMean << ' ' << pdfStdDev << endl;
 		}
 	}
+	std::cout << "All the information has been writen into " << outputfile << endl;
+
 	outfile.close();
+	GDALClose((GDALDataset*)Img);
+
 	return 0;
 }
+
