@@ -1,3 +1,0 @@
-C:/Users/Debao/Desktop/IndividualStudy/Debao/build/CMakeFiles/project1.dir
-C:/Users/Debao/Desktop/IndividualStudy/Debao/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Debao/Desktop/IndividualStudy/Debao/build/CMakeFiles/ZERO_CHECK.dir
