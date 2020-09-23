@@ -15,4 +15,4 @@ SET(src
 
 ADD_EXECUTABLE(project1 ${src})
 TARGET_LINK_LIBRARIES(project1 ${GDAL_LIBRARY})
-TARGET_LINK_LIBRARIES(project1 Boost::filesystem)
+TARGET_LINK_LIBRARIES(project1 ${Boost_LIBRARIES})

@@ -1,10 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <gdal_priv.h>
-#include <boost/filesystem.hpp>
+#include <boost/filesystem.hpp>  
 //#include <io.h>
-
-#define outputfile "C:/Users/Debao/Desktop/IndividualStudy/Debao/result.txt"
 
 using namespace std;
 using namespace boost::filesystem;
@@ -32,7 +30,9 @@ void getfilename(string addr, vector<string>& filename)
 	recursive_directory_iterator endit;
 	while (it != endit)
 	{
-		if (it->path().extension() == ".TIF")
+		string str = it->path().extension().string();
+		transform(str.begin(), str.end(), str.begin(), ::tolower);
+		if (str == ".tif")
 		{
 			string file_name = it->path().string();
 			filename.push_back(file_name);
@@ -44,7 +44,7 @@ void getfilename(string addr, vector<string>& filename)
 int main(int argc, char* argv[])
 {
 	std::ofstream outfile;
-	outfile.open(outputfile);
+	outfile.open(argv[2]);
 
 	cout << "Start to get filenames of all *.tif files." << endl;
 	vector <string> filename;
@@ -54,7 +54,6 @@ int main(int argc, char* argv[])
 	cout << "All filenames of *.tif files' has been collected." << endl;
 
 	cout << "Start to read the *.tif files and get information." << endl;
-	GDALDataset* Img;
 	GDALAllRegister();
 
 	for (int j = 0; j < filename.size(); j++)
@@ -64,7 +63,7 @@ int main(int argc, char* argv[])
 		//strcpy_s(tmp, argv[1]);
 		//strcat_s(tmp, file.c_str());
 
-		Img = (GDALDataset*)GDALOpen(filename[j].c_str(), GA_ReadOnly);
+		GDALDataset* Img = (GDALDataset*)GDALOpen(filename[j].c_str(), GA_ReadOnly);
 
 		int nCols = Img->GetRasterXSize();
 		int nRows = Img->GetRasterYSize();
@@ -87,12 +86,11 @@ int main(int argc, char* argv[])
 			outfile << "for band " << i << ", the mean and standard deviation are: ";
 			outfile << pdfMean << ' ' << pdfStdDev << endl;
 		}
+		GDALClose(Img);
 	}
-	std::cout << "All the information has been writen into " << outputfile << endl;
+	std::cout << "All the information has been writen into " << argv[2] << endl;
 
 	outfile.close();
-	GDALClose((GDALDataset*)Img);
-
 	return 0;
 }
 
